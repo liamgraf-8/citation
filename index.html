@@ -4,10 +4,124 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Quotes</title>
+
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+	
+	body{
+		font-family: "DM Mono";
+		color: blue; 
+	}
+
+	.title{
+		padding-top: 3rem;
+		display: flex;
+		flex-direction: column;
+		/* padding-left: 4.1rem; */
+		align-items: center;
+	}
+
+	.Quotes{
+		display: flex;
+		flex-direction: column ;
+		align-items: center;
+	}
+
+	.citation16{
+		animation:agrandisement 1s infinite;
+	}
+
+	.citation16:hover{
+		animation-play-state: paused;
+		
+	}
+
+	.Quotes p{
+		transition: transform 0.5s ease;
+	}
+
+	.Quotes p:hover{
+		transform: scaleX(1.3);
+		transition: 0.5s;
+	}
+
+	.fleche{
+		font-size: 20pt;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.fleche p{
+		animation: rotation 2s infinite;
+	}
+
+	@keyframes agrandisement{
+		0% {transform: scale(1);}
+		50% {transform: scale(1.5);}
+		100% {transform: scale(1)}
+	}
+
+	@keyframes rotation {
+		0% { transform: rotate(-180deg); }
+		50% { transform: rotate(180deg); }
+		100% { transform: rotate(-180deg); }
+
+	}
+	
+	</style>
+	
 </head>
 <body>
-	<h1>No matter how cool your interface is, it would be better if there were less of it.</h1>
-	<p>— Alan Cooper</p>
+	<h1 class="title">Citations</h1>
+
+	<div class="fleche">
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+	</div>
+
+
+	<div class="Quotes">
+	<p class="citation01"> <a href="citation-01.html"> citation-01 </a> </p>
+	<p class="citation02"> <a href="citation-02.html"> citation-02 </a> </p>
+	<p class="citation03"> <a href="citation-03.html"> citation-03 </a> </p>
+	<p class="citation04"> <a href="citation-04.html"> citation-04 </a> </p>
+	<p class="citation05"> <a href="citation-05.html"> citation-05 </a> </p>
+	<p class="citation06"> <a href="citation-06.html"> citation-06 </a> </p>
+	<p class="citation07"> <a href="citation-07.html"> citation-07 </a> </p>
+	<p class="citation08"> <a href="citation-08.html"> citation-08 </a> </p>
+	<p class="citation09"> <a href="citation-09.html"> citation-09 </a> </p>
+	<p class="citation10"> <a href="citation-10.html"> citation-10 </a> </p>
+	<p class="citation11"> <a href="citation-11.html"> citation-11 </a> </p>
+	<p class="citation12"> <a href="citation-12.html"> citation-12 </a> </p>
+	<p class="citation13"> <a href="citation-13.html"> citation-13 </a> </p>
+	<p class="citation14"> <a href="citation-14.html"> citation-14 </a> </p>
+	<p class="citation15"> <a href="citation-15.html"> citation-15 </a> </p>
+	<p class="citation16"> <a href="citation-16.html"> citation-16 </a> </p>
+	</div>
+	
+	<div class="fleche">
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+		<p>➢</p>
+	</div>
+
+		<link rel="stylesheet" href="navigation.css">
+
 </body>
 </html>
