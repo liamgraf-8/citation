@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Défilement citation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(0, 255, 76), rgb(25, 70, 0));
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  color: rgb(255, 255, 255);
+  font-size: 5ch;
+}
+
+.marquee-content h1,
+.marquee-content p {
+  display: inline;
+  margin: 0;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+}
+
+.marquee-content p {
+  font-weight: 200;
+  margin-left: 2rem;
+  font-size: 3ch;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+</head>
+<body>
+
+<div class="marquee">
+  <div class="marquee-content">
+    <h1>Hello. I'm Mr Frog. This is my Show. This is the Bug. I eat the Bug. I ate the Bug. This is the End. I Love You. Bye!</h1>
+    <p>— Mr Frog / Smiling Friends</p>
+  </div>
+</div>
+
+</body>
+<link rel="stylesheet" href="navigation.css">
+	<nav><a href="index.html">back</a></nav>
+</html>
