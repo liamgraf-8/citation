@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+		<style>
+
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+		h1{
+			font-weight: 700;
+			line-height: 1;
+			font-size: 5ch;
+			max-width: 1rem;
+		}
+
+		p{
+			font-size: 3ch;
+			font-weight: 500;
+			line-height: 1.5;
+		}
+
+		body{
+			min-height: 90vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: top;
+			align-items: center;
+			background: yellow;
+			gap: 1rem;
+			font-family: "Oswald";
+		}
+
+		.content{
+			margin-top: 7rem;
+		}
+
+		.fleur{
+			display: flex;
+			gap: 20px;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		.fleur p{
+			animation: rotation 1s infinite;
+		}
+
+		@keyframes rotation {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+		</style>
+
+</head>
+
+<body>
+
+	<div class="content">
+		<div class="fleur">
+			<p>✿</p>
+			<p>✿</p>
+			<p>✿</p>
+			<p>✿</p>
+			<p>✿</p>
+			<p>✿</p>
+			<p>✿</p>
+		</div>
+
+		<div>
+			<h1>Fais de ta vie un rêve, et d'un rêve, une réalité.</h1>
+			<p>— Antoine de Saint-Exupéry</p>
+		</div>
+	</div>
+
+</body>
+
+<link rel="stylesheet" href="navigation.css">
+	<nav><a href="index.html">back</a></nav>
+</html>
