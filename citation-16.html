@@ -11,19 +11,71 @@
 		@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
 
 		h1{
-
+			font-size: 35pt;
+			font-weight: 900;
 		}
 
 		p{
+			font-size: 26pt;
+			font-weight: 600;
+		}
 
+		.content{
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			align-items: center;
+		}
+
+		.txtnom{
+			text-align: center;
 		}
 
 		body {
+			background-color: rgb(255, 160, 0);
 			display: flex;
+			justify-content: center;
+			align-content: center;
+			height: 100vh;
 			font-family: Tektur;
 		}
 
-		
+		.txt{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+		}
+
+		.nn{
+			padding: 2px 22px;
+			border: 15px solid black;
+			width: fit-content;
+		}
+
+		.One, .Two{
+			display: flex;
+			width: fit-content;
+			align-items: top;
+			padding: 1px 20px;
+			border: 15px solid black;
+		}
+
+		.break{
+			display: flex;
+			align-items: top;
+			gap: 20px;
+		}
+
+		.One{
+			border-right: none;
+			transform: rotate(-20deg) translateY(8px);
+		}
+
+		.Two{
+			border-left: none;
+			transform: rotate(20deg) translateY(8px);
+		}
 
 		</style>
 
@@ -32,7 +84,29 @@
 <body>
 
 <div class="content">
-	
+
+	<div class="txt">
+
+		<h1 class="nn">Learn the rules,</h1>
+
+		<div class="break">
+			<h1 class="One">break th</h1>
+			<h1 class="Two">e rules,</h1>
+		</div>
+
+		<h1 class="nn">make up new rules,</h1>
+
+		<div class="break">
+			<h1 class="One">break the</h1>
+			<h1 class="Two">new rules.</h1>
+		</div>
+
+	</div>
+
+	<div class="txtnom">
+		<p>— Marvin Bell</p>
+	</div>
+
 </div>
 
 </body>
